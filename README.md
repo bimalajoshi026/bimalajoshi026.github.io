@@ -1,1 +1,1 @@
-# bimalajoshi026-bimalajoshi026.github.io
+# bimalajoshi026.github.io
