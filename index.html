@@ -1,1186 +1,327 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bimala Joshi | Health Data Analytics</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <style>
-    /* ── Design Tokens ─────────────────────────────────── */
-    :root {
-      --ink:       #1a1f2e;
-      --ink-soft:  #4a5168;
-      --ink-muted: #8a93a8;
-      --bg:        #f7f6f2;
-      --bg-card:   #ffffff;
-      --teal:      #1d7a72;
-      --teal-light:#e6f4f3;
-      --gold:      #b8860b;
-      --gold-light:#fdf6e3;
-      --border:    #e2e0d8;
-      --red:       #c0392b;
-    }
+Bimala.Joshi
+About
+Skills
+Projects
+Experience
+Certifications
+Contact
+LinkedIn ↗
+GitHub ↗
+CLINICAL DATA ANALYST · BUSINESS INTELLIGENCE · FORT WORTH, TX
+From clinical insight to actionable intelligence
+MS Health Data Analytics (4.0 GPA) · 10+ years healthcare operations · Translating complex clinical and business data into dashboards, models, and decisions that drive measurable outcomes — across healthcare and beyond.
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+View Projects
+Get in Touch
+Bimala Joshi
+10+
+years healthcare ops & leadership
+40K
+patients analyzed for stay & satisfaction
+4.0
+GPA · MS Health Data Analytics
+SQL
+Power BI
+Tableau
+Python
+HIPAA
+Snowflake
+About Me
 
-    html { scroll-behavior: smooth; }
+Clinical expertise, powered by data
+I'm Bimala Joshi — a clinical data analyst and BI professional with a rare combination of hands-on hospital operations experience and graduate-level data science training. For over a decade I managed inpatient, ICU, and emergency services, tracking KPIs like ICU utilization, bed occupancy, and ALOS — metrics that directly inform clinical and operational decisions.
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.6;
-    }
+I bring that clinical fluency to every analysis. At UNT (MS Health Data Analytics, 4.0 GPA) I built predictive models, interactive BI dashboards in Power BI and Tableau, and big data pipelines in Spark and BigQuery. I understand both the data and what it means at the bedside — a perspective most analysts can't offer.
 
-    /* ── Nav ────────────────────────────────────────────── */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(247,246,242,0.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2rem;
-      height: 56px;
-    }
-    .nav-logo {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.1rem;
-      color: var(--teal);
-      text-decoration: none;
-    }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.82rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--ink-soft);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--teal); }
+Whether it's designing a real-time clinical dashboard, writing complex SQL for reporting, or surfacing trends in patient outcomes, I connect the technical and the clinical to drive measurable impact. My analytical skills transfer across industries, and I'm open to opportunities in any sector where data drives decisions. Published researcher. HIPAA certified. Presidential award recipient.
 
-    /* ── Hero ───────────────────────────────────────────── */
-    .hero {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 6rem 2rem 4rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .hero-eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: var(--teal);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-    .hero h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(2.4rem, 5vw, 3.5rem);
-      line-height: 1.15;
-      color: var(--ink);
-      margin-bottom: 1.25rem;
-    }
-    .hero h1 em {
-      font-style: italic;
-      color: var(--teal);
-    }
-    .hero-sub {
-      font-size: 1rem;
-      color: var(--ink-soft);
-      max-width: 420px;
-      line-height: 1.7;
-      margin-bottom: 2rem;
-    }
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.65rem 1.4rem;
-      border-radius: 4px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-      cursor: pointer;
-      border: none;
-    }
-    .btn-primary {
-      background: var(--teal);
-      color: #fff;
-    }
-    .btn-primary:hover { background: #165f59; }
-    .btn-outline {
-      background: transparent;
-      color: var(--teal);
-      border: 1.5px solid var(--teal);
-    }
-    .btn-outline:hover { background: var(--teal-light); }
+Degree
+MS Health Data Analytics · 4.0 GPA
+Domain
+Healthcare Operations & Analytics
+Location
+Fort Worth, TX
+Published
+2 peer-reviewed journal articles
+Award
+Nepal Bidhya Bhushan "KHA" — Presidential
+Skills
 
-    /* Signature element: the data pulse card */
-    .hero-visual {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-    }
-    .pulse-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      color: var(--ink-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.75rem;
-    }
-    .stat-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-      margin-bottom: 0.6rem;
-    }
-    .stat-num {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2rem;
-      color: var(--teal);
-      line-height: 1;
-    }
-    .stat-desc {
-      font-size: 0.8rem;
-      color: var(--ink-soft);
-    }
-    .divider-thin {
-      height: 1px;
-      background: var(--border);
-      margin: 0.75rem 0;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
-    .tag {
-      font-size: 0.7rem;
-      font-family: 'JetBrains Mono', monospace;
-      padding: 0.2rem 0.55rem;
-      border-radius: 3px;
-      background: var(--teal-light);
-      color: var(--teal);
-    }
+Technical toolkit
+BI & Reporting
 
-    /* ── Section Wrapper ───────────────────────────────── */
-    section {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 4rem 2rem;
-    }
-    .section-eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--teal);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 0.6rem;
-    }
-    .section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-      color: var(--ink);
-      margin-bottom: 2.5rem;
-    }
-    .section-divider {
-      width: 40px;
-      height: 3px;
-      background: var(--teal);
-      margin-bottom: 2.5rem;
-    }
+Power BI (DAX, data modeling)
+Tableau (interactive dashboards)
+Matplotlib & Seaborn
+Data & Querying
 
-    /* ── About ─────────────────────────────────────────── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      gap: 3rem;
-      align-items: start;
-    }
-    .about-text p {
-      color: var(--ink-soft);
-      line-height: 1.75;
-      margin-bottom: 1rem;
-      font-size: 0.97rem;
-    }
-    .about-highlights {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-    .highlight-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      margin-bottom: 1.2rem;
-    }
-    .highlight-item:last-child { margin-bottom: 0; }
-    .highlight-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 6px;
-      background: var(--teal-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-    .highlight-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--ink-muted);
-      font-family: 'JetBrains Mono', monospace;
-    }
-    .highlight-value {
-      font-size: 0.88rem;
-      font-weight: 500;
-      color: var(--ink);
-      margin-top: 0.1rem;
-    }
+SQL (complex queries, joins, CTEs)
+Python (Pandas, NumPy, Scikit-learn)
+Excel (advanced analysis, pivot tables)
+Clinical Analytics
 
-    /* ── Skills ────────────────────────────────────────── */
-    #skills { background: var(--bg); }
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.2rem;
-    }
-    .skill-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.25rem;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .skill-card:hover {
-      border-color: var(--teal);
-      box-shadow: 0 2px 12px rgba(29,122,114,0.08);
-    }
-    .skill-card-title {
-      font-size: 0.78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--teal);
-      margin-bottom: 0.75rem;
-    }
-    .skill-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-    .skill-list li {
-      font-size: 0.85rem;
-      color: var(--ink-soft);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .skill-list li::before {
-      content: '';
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--teal);
-      flex-shrink: 0;
-    }
+ICU Utilization, ALOS, Bed Occupancy KPIs
+Patient Satisfaction & Outcome Analysis
+HIPAA Compliance & Health Policy
+ML & Statistical Methods
 
-    /* ── Projects ──────────────────────────────────────── */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-    .project-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.75rem;
-      transition: box-shadow 0.2s, border-color 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-    .project-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--teal);
-    }
-    .project-card:hover {
-      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
-      border-color: var(--teal);
-    }
-    .project-date {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      color: var(--ink-muted);
-      margin-bottom: 0.5rem;
-    }
-    .project-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.2rem;
-      color: var(--ink);
-      margin-bottom: 0.75rem;
-      line-height: 1.3;
-    }
-    .project-desc {
-      font-size: 0.86rem;
-      color: var(--ink-soft);
-      line-height: 1.65;
-      margin-bottom: 1rem;
-    }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-    .project-tag {
-      font-size: 0.68rem;
-      font-family: 'JetBrains Mono', monospace;
-      padding: 0.2rem 0.5rem;
-      border-radius: 3px;
-      background: var(--teal-light);
-      color: var(--teal);
-    }
+Predictive Modeling (XGBoost, Random Forest, Logistic Regression)
+ANOVA, Hypothesis Testing
+EDA & Statistical Interpretation
+Cloud & Big Data
 
-    /* ── Experience ────────────────────────────────────── */
-    .timeline { position: relative; }
-    .timeline-item {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-      position: relative;
-    }
-    .timeline-item::after {
-      content: '';
-      position: absolute;
-      left: 139px;
-      top: 6px;
-      bottom: -1rem;
-      width: 1px;
-      background: var(--border);
-    }
-    .timeline-item:last-child::after { display: none; }
-    .timeline-date {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.72rem;
-      color: var(--ink-muted);
-      text-align: right;
-      padding-top: 0.2rem;
-      line-height: 1.4;
-    }
-    .timeline-dot {
-      position: absolute;
-      left: 131px;
-      top: 4px;
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--teal);
-      border: 2px solid var(--bg);
-    }
-    .timeline-body { padding-left: 1rem; }
-    .timeline-org {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--teal);
-      margin-bottom: 0.2rem;
-    }
-    .timeline-role {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.15rem;
-      color: var(--ink);
-      margin-bottom: 0.5rem;
-    }
-    .timeline-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
-    }
-    .timeline-bullets li {
-      font-size: 0.86rem;
-      color: var(--ink-soft);
-      padding-left: 1rem;
-      position: relative;
-      line-height: 1.55;
-    }
-    .timeline-bullets li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--teal);
-      font-size: 0.75rem;
-    }
+AWS & Azure
+Apache Spark, Hive & Hadoop
+BigQuery & Snowflake
+Enterprise & Domain
 
-    /* ── Education ─────────────────────────────────────── */
-    .edu-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.2rem;
-    }
-    .edu-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.4rem;
-    }
-    .edu-degree {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1rem;
-      color: var(--ink);
-      margin-bottom: 0.4rem;
-      line-height: 1.3;
-    }
-    .edu-school {
-      font-size: 0.82rem;
-      color: var(--ink-soft);
-      margin-bottom: 0.35rem;
-    }
-    .edu-meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      color: var(--teal);
-    }
+SAP ERP
+Health Insurance & Managed Care
+SPSS & Statistical Reporting
+Projects
 
-    /* ── Certifications ────────────────────────────────── */
-    .certs-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-    }
-    .cert-card {
-      background: var(--gold-light);
-      border: 1px solid #e6d59a;
-      border-radius: 8px;
-      padding: 1.1rem;
-      display: flex;
-      gap: 0.75rem;
-      align-items: flex-start;
-    }
-    .cert-icon {
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-    .cert-title {
-      font-size: 0.84rem;
-      font-weight: 600;
-      color: var(--ink);
-      line-height: 1.3;
-      margin-bottom: 0.2rem;
-    }
-    .cert-issuer {
-      font-size: 0.73rem;
-      color: var(--gold);
-      font-family: 'JetBrains Mono', monospace;
-    }
+Applied data work
+Nepal Mediciti · 2017–2024
 
-    /* ── Publications ──────────────────────────────────── */
-    .pub-item {
-      background: var(--bg-card);
-      border-left: 3px solid var(--teal);
-      padding: 1rem 1.25rem;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 1rem;
-      font-size: 0.87rem;
-      color: var(--ink-soft);
-      line-height: 1.65;
-    }
-    .pub-item a {
-      color: var(--teal);
-      font-size: 0.8rem;
-      display: inline-block;
-      margin-top: 0.35rem;
-    }
+Patient Stay & Satisfaction Analysis
+Designed and maintained clinical KPI dashboards tracking ICU Utilization Rate, Bed Occupancy, and Average Length of Stay (ALOS) across ~40,000 patients. Benchmarked performance against standards and presented findings to leadership — directly informing staffing, capacity, and operational policy decisions.
 
-    /* ── Contact ───────────────────────────────────────── */
-    #contact {
-      background: var(--ink);
-      max-width: 100%;
-      padding: 5rem 2rem;
-    }
-    #contact .inner {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-    #contact .section-eyebrow { color: var(--teal); }
-    #contact .section-title { color: #ffffff; }
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .contact-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.7rem 1.4rem;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.15);
-      border-radius: 6px;
-      color: #e2e0d8;
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: all 0.2s;
-    }
-    .contact-link:hover {
-      background: var(--teal);
-      border-color: var(--teal);
-      color: #fff;
-    }
+Healthcare Analytics
+Quality Indicators
+KPI Dashboards
+Operations
+Dec 2025
 
-    /* ── Footer ────────────────────────────────────────── */
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.75rem;
-      color: var(--ink-muted);
-      border-top: 1px solid var(--border);
-    }
+Chronic Disease Distribution Dashboard
+Built an interactive Tableau dashboard analyzing 21,000+ chronic disease records from data.gov (2015–2022). Applied BI best practices — drill-downs, regional filters, trend lines — to surface cardiovascular disease as a leading burden and guide targeted public health interventions.
 
-    /* ── Responsive ────────────────────────────────────── */
-    @media (max-width: 768px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-visual { order: -1; }
-      .about-grid { grid-template-columns: 1fr; }
-      .skills-grid { grid-template-columns: 1fr 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .edu-grid { grid-template-columns: 1fr; }
-      .certs-grid { grid-template-columns: 1fr 1fr; }
-      .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
-      .timeline-item::after { display: none; }
-      .timeline-dot { display: none; }
-      .timeline-date { text-align: left; }
-      .nav-links { display: none; }
-    }
-    @media (max-width: 480px) {
-      .skills-grid { grid-template-columns: 1fr; }
-      .certs-grid { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
+Tableau
+Data Visualization
+Public Health
+EDA
+⌥ View on GitHub ↗
+Dec 2025 · UNT ADTA 5250
 
-<!-- NAV -->
-<nav>
-  <a class="nav-logo" href="#">Bimala Joshi</a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="https://www.linkedin.com/in/bimala-joshi-598868130/" target="_blank">LinkedIn ↗</a></li>
-    <li><a href="https://github.com/bimalajoshi026" target="_blank">GitHub ↗</a></li>
-  </ul>
-</nav>
+Hospital Discharge Data — Power BI Report
+Built a full Power BI report on hospital discharge data — from raw ingestion to published dashboard. Cleaned and transformed data in Power Query, modeled relationships, and designed interactive visualizations including charts, tables, and summary metrics to surface discharge patterns and operational insights.
 
-<!-- HERO -->
-<div class="hero">
-  <div>
-    <p class="hero-eyebrow">Clinical Data Analyst · Business Intelligence · Fort Worth, TX</p>
-    <h1>From <em>clinical insight</em> to actionable intelligence</h1>
-    <p class="hero-sub">
-      MS Health Data Analytics (4.0 GPA) · 10+ years healthcare operations · 
-      Translating complex clinical and business data into dashboards, models, and decisions that drive measurable outcomes — across healthcare and beyond.
-    </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#projects">View Projects</a>
-      <a class="btn btn-outline" href="#contact">Get in Touch</a>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <p class="pulse-label">Career Snapshot</p>
-    <div class="stat-row">
-      <span class="stat-num">10+</span>
-      <span class="stat-desc">years in healthcare ops &amp; leadership</span>
-    </div>
-    <div class="stat-row">
-      <span class="stat-num">40K</span>
-      <span class="stat-desc">patients analyzed for stay &amp; satisfaction</span>
-    </div>
-    <div class="stat-row">
-      <span class="stat-num">4.0</span>
-      <span class="stat-desc">GPA · MS Health Data Analytics, UNT</span>
-    </div>
-    <div class="divider-thin"></div>
-    <p class="pulse-label">BI & Clinical Stack</p>
-    <div class="tag-row">
-      <span class="tag">SQL</span>
-      <span class="tag">Power BI</span>
-      <span class="tag">Tableau</span>
-      <span class="tag">Python</span>
-      <span class="tag">HIPAA</span>
-      <span class="tag">Snowflake</span>
-    </div>
-  </div>
-</div>
+Power BI
+Power Query
+Data Modeling
+Hospital Data
+⚡ View Live Report ↗
+⌥ View on GitHub ↗
+Nov 2025 · UNT ADTA 5250
 
-<!-- ABOUT -->
-<section id="about">
-  <p class="section-eyebrow">About Me</p>
-  <h2 class="section-title">Clinical expertise, powered by data</h2>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>
-        I'm Bimala Joshi — a clinical data analyst and BI professional with a rare combination of 
-        hands-on hospital operations experience and graduate-level data science training. For over a 
-        decade I managed inpatient, ICU, and emergency services, tracking KPIs like ICU utilization, 
-        bed occupancy, and ALOS — metrics that directly inform clinical and operational decisions.
-      </p>
-      <p>
-        I bring that clinical fluency to every analysis. At UNT (MS Health Data Analytics, 4.0 GPA) 
-        I built predictive models, interactive BI dashboards in Power BI and Tableau, and big data 
-        pipelines in Spark and BigQuery. I understand both the data and what it means at the bedside — 
-        a perspective most analysts can't offer.
-      </p>
-      <p>
-        Whether it's designing a real-time clinical dashboard, writing complex SQL for reporting, or 
-        surfacing trends in patient outcomes, I connect the technical and the clinical to drive 
-        measurable impact. My analytical skills — predictive modeling, BI dashboards, big data pipelines — 
-        transfer across industries, and I'm open to opportunities in any sector where data drives decisions. 
-        Published researcher. HIPAA certified. Presidential award recipient.
-      </p>
-    </div>
-    <div class="about-highlights">
-      <div class="highlight-item">
-        <div class="highlight-icon">🎓</div>
-        <div>
-          <div class="highlight-label">Degree</div>
-          <div class="highlight-value">MS Health Data Analytics · 4.0 GPA</div>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">🏥</div>
-        <div>
-          <div class="highlight-label">Domain</div>
-          <div class="highlight-value">Healthcare Operations &amp; Analytics</div>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">📍</div>
-        <div>
-          <div class="highlight-label">Location</div>
-          <div class="highlight-value">Fort Worth, TX</div>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">📄</div>
-        <div>
-          <div class="highlight-label">Published</div>
-          <div class="highlight-value">2 peer-reviewed journal articles</div>
-        </div>
-      </div>
-      <div class="highlight-item">
-        <div class="highlight-icon">🏆</div>
-        <div>
-          <div class="highlight-label">Award</div>
-          <div class="highlight-value">Nepal Bidhya Bhushan "KHA" — Presidential</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+Patient Discharge Analytics — Tableau Dashboard
+Built a multi-chart Tableau dashboard on NY state hospital discharge data, exploring disease severity trends, cost vs. charge relationships, and facility-level performance. Included interactive Top-N parameters, time-series line charts, scatter plots, and dual bar charts — surfacing insights like a post-2014 decline in minor-severity discharges and New York Presbyterian's significantly higher mean cost and charge compared to peer facilities.
 
-<!-- SKILLS -->
-<section id="skills">
-  <p class="section-eyebrow">Skills</p>
-  <h2 class="section-title">Technical toolkit</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <p class="skill-card-title">BI & Reporting</p>
-      <ul class="skill-list">
-        <li>Power BI (DAX, data modeling)</li>
-        <li>Tableau (interactive dashboards)</li>
-        <li>Matplotlib &amp; Seaborn</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <p class="skill-card-title">Data & Querying</p>
-      <ul class="skill-list">
-        <li>SQL (complex queries, joins, CTEs)</li>
-        <li>Python (Pandas, NumPy, Scikit-learn)</li>
-        <li>Excel (advanced analysis, pivot tables)</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <p class="skill-card-title">Clinical Analytics</p>
-      <ul class="skill-list">
-        <li>ICU Utilization, ALOS, Bed Occupancy KPIs</li>
-        <li>Patient Satisfaction &amp; Outcome Analysis</li>
-        <li>HIPAA Compliance &amp; Health Policy</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <p class="skill-card-title">ML & Statistical Methods</p>
-      <ul class="skill-list">
-        <li>Predictive Modeling (Random Forest, Logistic Regression)</li>
-        <li>ANOVA, Hypothesis Testing</li>
-        <li>EDA &amp; Statistical Interpretation</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <p class="skill-card-title">Cloud & Big Data</p>
-      <ul class="skill-list">
-        <li>AWS &amp; Azure</li>
-        <li>Apache Spark, Hive &amp; Hadoop</li>
-        <li>BigQuery &amp; Snowflake</li>
-      </ul>
-    </div>
-    <div class="skill-card">
-      <p class="skill-card-title">Enterprise & Domain</p>
-      <ul class="skill-list">
-        <li>SAP ERP</li>
-        <li>Health Insurance &amp; Managed Care</li>
-        <li>SPSS &amp; Statistical Reporting</li>
-      </ul>
-    </div>
-  </div>
-</section>
+Tableau
+Data Cleaning
+Interactive Dashboard
+Hospital Data
+Cost Analysis
+UNT · 2025
 
-<!-- PROJECTS -->
-<section id="projects">
-  <p class="section-eyebrow">Projects</p>
-  <h2 class="section-title">Applied data work</h2>
-  <div class="projects-grid">
+Deadly & Damaging Storm Events Analysis
+Built a scalable data pipeline processing static and streaming storm event data using BigQuery, Apache Hive, and Spark. Aggregated and visualized damage patterns by region and season — demonstrating end-to-end BI engineering from raw ingestion to reportable insight.
 
-    <!-- 1. Patient Stay & Satisfaction — strongest clinical KPI story -->
-    <div class="project-card">
-      <p class="project-date">Nepal Mediciti · 2017–2024</p>
-      <h3 class="project-title">Patient Stay &amp; Satisfaction Analysis</h3>
-      <p class="project-desc">
-        Designed and maintained clinical KPI dashboards tracking ICU Utilization Rate, Bed Occupancy, 
-        and Average Length of Stay (ALOS) across ~40,000 patients. Benchmarked performance against 
-        standards and presented findings to leadership — directly informing staffing, capacity, and 
-        operational policy decisions.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Healthcare Analytics</span>
-        <span class="project-tag">Quality Indicators</span>
-        <span class="project-tag">KPI Dashboards</span>
-        <span class="project-tag">Operations</span>
-      </div>
-    </div>
+BigQuery
+Apache Hive
+Spark
+Big Data
+⌥ View on GitHub ↗
+Dec 2025 · UNT ADTA 5230 · Group Project
 
-    <!-- 2. Chronic Disease Dashboard — strong BI + has GitHub link -->
-    <div class="project-card">
-      <p class="project-date">Dec 2025</p>
-      <h3 class="project-title">Chronic Disease Distribution Dashboard</h3>
-      <p class="project-desc">
-        Built an interactive Tableau dashboard analyzing 21,000+ chronic disease records from 
-        data.gov (2015–2022). Applied BI best practices — drill-downs, regional filters, trend 
-        lines — to surface cardiovascular disease as a leading burden and guide targeted public 
-        health interventions.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Tableau</span>
-        <span class="project-tag">Data Visualization</span>
-        <span class="project-tag">Public Health</span>
-        <span class="project-tag">EDA</span>
-      </div>
-      <a href="https://github.com/bimalajoshi026/Chronic-Disease-Analysis" target="_blank" style="display:inline-flex;align-items:center;gap:0.35rem;margin-top:0.75rem;font-size:0.78rem;color:var(--teal);font-weight:500;">⌥ View on GitHub ↗</a>
-    </div>
+Predictive Classification & Regression for Cost-Effective Donor Marketing
+Hired as data scientists by a non-profit losing $0.55 per donor mailer. Analyzed 6,002 records with 20 features to build a full ML pipeline — EDA, feature engineering (Recency Score, Gift Effectiveness, Average Gift Size), and both classification and regression models. XGBoost achieved 85.73% accuracy with 96.25% precision; Random Forest regressor delivered R² of 57.61%. Deployed on 2,007 unseen records, flipping the outcome to an expected profit of $0.76 per mailing.
 
-    <!-- 3. Power BI Hospital Discharge — live report link -->
-    <div class="project-card">
-      <p class="project-date">Dec 2025 · UNT ADTA 5250</p>
-      <h3 class="project-title">Hospital Discharge Data — Power BI Report</h3>
-      <p class="project-desc">
-        Built a full Power BI report on hospital discharge data — from raw ingestion to published 
-        dashboard. Cleaned and transformed data in Power Query, modeled relationships, and designed 
-        interactive visualizations including charts, tables, and summary metrics to surface discharge 
-        patterns and operational insights.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Power BI</span>
-        <span class="project-tag">Power Query</span>
-        <span class="project-tag">Data Modeling</span>
-        <span class="project-tag">Hospital Data</span>
-      </div>
-      <a href="https://app.powerbi.com/groups/me/reports/ef89b10f-4c6f-4294-8002-a1275f11e0a3?ctid=70de1992-07c6-480f-a318-a1afcba03983&pbi_source=linkShare" target="_blank" style="display:inline-flex;align-items:center;gap:0.35rem;margin-top:0.75rem;font-size:0.78rem;color:var(--teal);font-weight:500;">⚡ View Live Report ↗</a>
-    </div>
+Python
+XGBoost
+Random Forest
+Logistic Regression
+KNN
+Scikit-learn
+⌥ View on GitHub ↗
+UNT · Group Project
 
-    <!-- 4. Tableau Patient Discharge Dashboard -->
-    <div class="project-card">
-      <p class="project-date">Nov 2025 · UNT ADTA 5250</p>
-      <h3 class="project-title">Patient Discharge Analytics — Tableau Dashboard</h3>
-      <p class="project-desc">
-        Built a multi-chart Tableau dashboard on NY state hospital discharge data, exploring disease 
-        severity trends, cost vs. charge relationships, and facility-level performance. Included 
-        interactive Top-N parameters, time-series line charts, scatter plots, and dual bar charts — 
-        surfacing insights like a post-2014 decline in minor-severity discharges and New York 
-        Presbyterian's significantly higher mean cost and charge compared to peer facilities.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Tableau</span>
-        <span class="project-tag">Data Cleaning</span>
-        <span class="project-tag">Interactive Dashboard</span>
-        <span class="project-tag">Hospital Data</span>
-        <span class="project-tag">Cost Analysis</span>
-      </div>
-    </div>
+Energy Consumption Forecasting for Smart Grid
+Tackled forecasting inefficiency for smart grid operators by building predictive models on 187,728 hourly records spanning 2001–2022, with 34 internal (load, PV, fuel cell) and external (weather) variables. After KNN imputation and temporal feature engineering, evaluated Linear Regression, Ridge, HistGradientBoosting, XGBoost, LightGBM, and ANN. LightGBM emerged as the top performer with R² of 0.9691 — explaining 97% of consumption variance.
 
-    <!-- 5. Storm Events — big data pipeline skills -->
-    <div class="project-card">
-      <p class="project-date">UNT · 2025</p>
-      <h3 class="project-title">Deadly &amp; Damaging Storm Events Analysis</h3>
-      <p class="project-desc">
-        Built a scalable data pipeline processing static and streaming storm event data using 
-        BigQuery, Apache Hive, and Spark. Aggregated and visualized damage patterns by region and 
-        season — demonstrating end-to-end BI engineering from raw ingestion to reportable insight.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">BigQuery</span>
-        <span class="project-tag">Apache Hive</span>
-        <span class="project-tag">Spark</span>
-        <span class="project-tag">Big Data</span>
-      </div>
-    </div>
+LightGBM
+XGBoost
+Time Series
+ANN
+Forecasting
+⌥ View on GitHub ↗
+UNT · 2025
 
-    <!-- 5. Donor Prediction — ML skills -->
-    <div class="project-card">
-      <p class="project-date">Dec 2025</p>
-      <h3 class="project-title">Predictive Classification &amp; Regression for Donor Identification</h3>
-      <p class="project-desc">
-        Designed and built an end-to-end ML pipeline using Random Forest and Logistic Regression to 
-        classify likely donors and predict donation amounts. Delivered actionable BI output — enabling 
-        stakeholders to prioritize outreach and significantly reduce marketing costs through data-driven 
-        targeting.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">Random Forest</span>
-        <span class="project-tag">Logistic Regression</span>
-        <span class="project-tag">Predictive Modeling</span>
-      </div>
-    </div>
+Medicaid to Managed Care: Transition vs. Resistance
+Analyzed state-level policies and barriers affecting the shift from traditional Medicaid to managed care models. Synthesized findings into policy recommendations addressing transition challenges across diverse demographic and fiscal contexts.
 
-    <!-- 6. Medicaid Policy — health policy depth -->
-    <div class="project-card">
-      <p class="project-date">UNT · 2025</p>
-      <h3 class="project-title">Medicaid to Managed Care: Transition vs. Resistance</h3>
-      <p class="project-desc">
-        Analyzed state-level policies and barriers affecting the shift from traditional Medicaid to 
-        managed care models. Synthesized findings into policy recommendations addressing transition 
-        challenges across diverse demographic and fiscal contexts.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Health Policy</span>
-        <span class="project-tag">Policy Analysis</span>
-        <span class="project-tag">Managed Care</span>
-      </div>
-    </div>
+Health Policy
+Policy Analysis
+Managed Care
+Feb 2015
 
-    <!-- 7. Going Lean — measurable ops impact -->
-    <div class="project-card">
-      <p class="project-date">Feb 2015</p>
-      <h3 class="project-title">Going Lean in Health4U</h3>
-      <p class="project-desc">
-        Conducted a time-motion study on 30 clients undergoing preventive health check-ups to identify 
-        process waste and inefficiencies. Applied Lean methodology (Gemba Walk, waste identification) 
-        to redesign patient workflow — improving on-time completion rate from 27% to 50%, cutting 
-        waiting time and boosting patient satisfaction.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Lean Six Sigma</span>
-        <span class="project-tag">Process Improvement</span>
-        <span class="project-tag">Time-Motion Study</span>
-        <span class="project-tag">Healthcare Ops</span>
-      </div>
-    </div>
+Going Lean in Health4U
+Conducted a time-motion study on 30 clients undergoing preventive health check-ups to identify process waste and inefficiencies. Applied Lean methodology (Gemba Walk, waste identification) to redesign patient workflow — improving on-time completion rate from 27% to 50%, cutting waiting time and boosting patient satisfaction.
 
-    <!-- 8. Movies Analysis — general analytical range -->
-    <div class="project-card">
-      <p class="project-date">UNT · 2025</p>
-      <h3 class="project-title">Analysis of the Movies</h3>
-      <p class="project-desc">
-        Applied exploratory data analysis (EDA), ANOVA tests, and regression modeling to identify 
-        the key factors influencing movie ratings. Uncovered statistically significant predictors 
-        and visualized their relative impact on audience scores.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">EDA</span>
-        <span class="project-tag">ANOVA</span>
-        <span class="project-tag">Regression</span>
-      </div>
-    </div>
+Lean Six Sigma
+Process Improvement
+Time-Motion Study
+Healthcare Ops
+UNT · 2025
 
-    <!-- 9. OrgSync — UNT work -->
-    <div class="project-card">
-      <p class="project-date">UNT · 2024–Present</p>
-      <h3 class="project-title">Event Resource Optimization (OrgSync)</h3>
-      <p class="project-desc">
-        Analyzed trends across 1,000+ event applications on the OrgSync platform to identify 
-        patterns in equipment and resource requests, enabling better planning and allocation for 
-        university student activities.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Data Analysis</span>
-        <span class="project-tag">Trend Analysis</span>
-        <span class="project-tag">Reporting</span>
-      </div>
-    </div>
+Analysis of the Movies
+Applied exploratory data analysis (EDA), ANOVA tests, and regression modeling to identify the key factors influencing movie ratings. Uncovered statistically significant predictors and visualized their relative impact on audience scores.
 
-    <!-- 10. Employee Engagement — HR analytics closer -->
-    <div class="project-card">
-      <p class="project-date">Feb 2015</p>
-      <h3 class="project-title">Employee Engagement Among Nursing Staff</h3>
-      <p class="project-desc">
-        Surveyed nursing staff at a hospital to measure satisfaction levels through a structured 
-        questionnaire. Used Excel and SPSS for data cleaning and analysis, identified areas of 
-        highest dissatisfaction, and reported findings to relevant departments to drive targeted 
-        improvements in staff satisfaction.
-      </p>
-      <div class="project-tags">
-        <span class="project-tag">Excel</span>
-        <span class="project-tag">SPSS</span>
-        <span class="project-tag">Survey Analysis</span>
-        <span class="project-tag">HR Analytics</span>
-      </div>
-    </div>
+Python
+EDA
+ANOVA
+Regression
+⌥ View on GitHub ↗
+UNT · 2024–Present
 
-  </div>
-</section>
+Event Resource Optimization (OrgSync)
+Analyzed trends across 1,000+ event applications on the OrgSync platform to identify patterns in equipment and resource requests, enabling better planning and allocation for university student activities.
 
-<!-- EXPERIENCE -->
-<section id="experience">
-  <p class="section-eyebrow">Experience</p>
-  <h2 class="section-title">Career timeline</h2>
-  <div class="timeline">
+Data Analysis
+Trend Analysis
+Reporting
+Feb 2015
 
-    <div class="timeline-item">
-      <div class="timeline-date">Sep 2024<br>— May 2026</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-body">
-        <p class="timeline-org">University of North Texas · Denton, TX</p>
-        <p class="timeline-role">Graduate Assistant — Student Activities &amp; Academics</p>
-        <ul class="timeline-bullets">
-          <li>Analyzed event data and feedback to assess student engagement across 1,000+ applications</li>
-          <li>Managed OrgSync records and generated reports for program planning and resource allocation</li>
-          <li>Designed volunteer forms and connected students to community partners</li>
-          <li>Supported behavioral therapy sessions for children with autism (KFAC) and assisted in observational data collection and session documentation</li>
-          <li>Supervised 2,500 students during exams to uphold academic integrity standards</li>
-          <li>Prepared data visualizations to support learning for autistic students</li>
-        </ul>
-      </div>
-    </div>
+Employee Engagement Among Nursing Staff
+Surveyed nursing staff at a hospital to measure satisfaction levels through a structured questionnaire. Used Excel and SPSS for data cleaning and analysis, identified areas of highest dissatisfaction, and reported findings to relevant departments to drive targeted improvements in staff satisfaction.
 
-    <div class="timeline-item">
-      <div class="timeline-date">Sep 2017<br>— Aug 2024</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-body">
-        <p class="timeline-org">Nepal Mediciti · Kathmandu, Nepal</p>
-        <p class="timeline-role">Operations Manager — Inpatient, ICU &amp; Emergency</p>
-        <ul class="timeline-bullets">
-          <li>Leveraged data analysis to monitor patient stay and satisfaction for nearly 40,000 patients</li>
-          <li>Analyzed key hospital indicators including ICU Utilization Rate, Bed Occupancy, and Average Length of Stay (ALOS) to drive operational improvements</li>
-          <li>Implemented protocols to ensure quality indicators stay on benchmark; presented findings to senior leadership</li>
-          <li>Managed heli-ambulance evacuation service and designed SOPs for emergency and helicopter rescue operations</li>
-          <li>Coordinated cross-departmental response for ~5,000 beyond-capacity patients during surge periods</li>
-          <li>Decreased patient discharge time by conducting Gemba Walks and implementing process improvement solutions</li>
-          <li>Identified 8 types of waste in the Operation Theatre causing late OT start times and redesigned workflows for efficiency</li>
-          <li>Implemented solutions from root cause analysis of hospital incidents to prevent recurrence</li>
-        </ul>
-      </div>
-    </div>
+Excel
+SPSS
+Survey Analysis
+HR Analytics
+Experience
 
-    <div class="timeline-item">
-      <div class="timeline-date">Sep 2016<br>— Sep 2017</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-body">
-        <p class="timeline-org">College of Medical Science · Chitwan, Nepal</p>
-        <p class="timeline-role">Operations Manager — Outpatient &amp; Operation Theatre</p>
-        <ul class="timeline-bullets">
-          <li>Remodeled OPD patient flow to improve coordination and reduce bottlenecks</li>
-          <li>Emphasized morning OT usage to decrease daytime patient wait times</li>
-          <li>Collected and managed hospital inventory; designed hospital-wide signage system</li>
-        </ul>
-      </div>
-    </div>
+Career timeline
+Sep 2024
+— May 2026
+University of North Texas · Denton, TX
 
-    <div class="timeline-item">
-      <div class="timeline-date">Feb 2016<br>— Sep 2017</div>
-      <div class="timeline-dot"></div>
-      <div class="timeline-body">
-        <p class="timeline-org">EyeQ India · India</p>
-        <p class="timeline-role">Assistant Manager — HR</p>
-        <ul class="timeline-bullets">
-          <li>Created and maintained HR reports and dashboards monthly for ~350 employees</li>
-          <li>Recruited new employees and structured compensation aligned with industry standards</li>
-        </ul>
-      </div>
-    </div>
+Graduate Assistant — Student Activities & Academics
 
-  </div>
-</section>
+Analyzed event data and feedback to assess student engagement across 1,000+ applications
+Managed OrgSync records and generated reports for program planning and resource allocation
+Designed volunteer forms and connected students to community partners
+Supported behavioral therapy sessions for children with autism (KFAC) and assisted in observational data collection and session documentation
+Supervised 2,500 students during exams to uphold academic integrity standards
+Prepared data visualizations to support learning for autistic students
+Sep 2017
+— Aug 2024
+Nepal Mediciti · Kathmandu, Nepal
 
-<!-- EDUCATION -->
-<section id="education">
-  <p class="section-eyebrow">Education</p>
-  <h2 class="section-title">Academic background</h2>
-  <div class="edu-grid">
-    <div class="edu-card">
-      <p class="edu-degree">MS Health Data Analytics</p>
-      <p class="edu-school">University of North Texas · Denton, TX</p>
-      <p class="edu-meta">GPA 4.0 · May 2026</p>
-    </div>
-    <div class="edu-card">
-      <p class="edu-degree">MBA · Healthcare Management</p>
-      <p class="edu-school">Chitkara University · Punjab, India</p>
-      <p class="edu-meta">GPA 3.8 · Jul 2015</p>
-    </div>
-    <div class="edu-card">
-      <p class="edu-degree">BS Microbiology</p>
-      <p class="edu-school">Tribhuvan University · Kathmandu, Nepal</p>
-      <p class="edu-meta">GPA 3.7 · Jul 2013</p>
-    </div>
-  </div>
-</section>
+Operations Manager — Inpatient, ICU & Emergency
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <p class="section-eyebrow">Certifications &amp; Awards</p>
-  <h2 class="section-title">Credentials</h2>
-  <div class="certs-grid">
-    <div class="cert-card">
-      <div class="cert-icon">🏅</div>
-      <div>
-        <p class="cert-title">HIPAA Certification</p>
-        <p class="cert-issuer">U.S. Dept. of Health &amp; Human Services · Jun 2025</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">🔬</div>
-      <div>
-        <p class="cert-title">Ethics in Health Research</p>
-        <p class="cert-issuer">2024</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">📊</div>
-      <div>
-        <p class="cert-title">Data Literacy: Exploring Data in an AI World</p>
-        <p class="cert-issuer">LinkedIn Learning · Jun 2026</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">📊</div>
-      <div>
-        <p class="cert-title">Learning Excel: Data Analysis</p>
-        <p class="cert-issuer">LinkedIn Learning · May 2026</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">⚡</div>
-      <div>
-        <p class="cert-title">Getting Started with Power BI</p>
-        <p class="cert-issuer">LinkedIn Learning · Mar 2026</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">🔧</div>
-      <div>
-        <p class="cert-title">SAP ERP Essential Training</p>
-        <p class="cert-issuer">LinkedIn Learning · Mar 2026</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">🧠</div>
-      <div>
-        <p class="cert-title">Non-Technical Skills of Data Scientists</p>
-        <p class="cert-issuer">LinkedIn Learning · May 2026</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">♻️</div>
-      <div>
-        <p class="cert-title">LCS 1a — Green Belt Certification</p>
-        <p class="cert-issuer">Simpler · Jun 2014</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">🏥</div>
-      <div>
-        <p class="cert-title">Basic Life Support (BLS)</p>
-        <p class="cert-issuer">Nepal Mediciti Hospital · Sep 2022</p>
-      </div>
-    </div>
-    <div class="cert-card">
-      <div class="cert-icon">🦠</div>
-      <div>
-        <p class="cert-title">Infection Prevention &amp; Control Workshop</p>
-        <p class="cert-issuer">NCCDF &amp; Nepal Mediciti · Aug 2018</p>
-      </div>
-    </div>
-  </div>
+Leveraged data analysis to monitor patient stay and satisfaction for nearly 40,000 patients
+Analyzed key hospital indicators including ICU Utilization Rate, Bed Occupancy, and Average Length of Stay (ALOS) to drive operational improvements
+Implemented protocols to ensure quality indicators stay on benchmark; presented findings to senior leadership
+Managed heli-ambulance evacuation service and designed SOPs for emergency and helicopter rescue operations
+Coordinated cross-departmental response for ~5,000 beyond-capacity patients during surge periods
+Decreased patient discharge time by conducting Gemba Walks and implementing process improvement solutions
+Identified 8 types of waste in the Operation Theatre causing late OT start times and redesigned workflows for efficiency
+Implemented solutions from root cause analysis of hospital incidents to prevent recurrence
+Sep 2016
+— Sep 2017
+College of Medical Science · Chitwan, Nepal
 
-  <!-- Publications -->
-  <div style="margin-top: 3rem;">
-    <p class="section-eyebrow">Publications</p>
-    <h3 style="font-family:'DM Serif Display',serif; font-size:1.4rem; margin-bottom:1.5rem; color:var(--ink);">Peer-reviewed research</h3>
-    <div class="pub-item">
-      Singh, S., <strong>Joshi, B.</strong>, et al. (2025). Evolution of helicopter services and their development from a medical standpoint: Nepal. <em>Air Medical Journal</em>, 44(1), 30–33.
-      <br><a href="https://doi.org/10.1016/j.amj.2024.09.001" target="_blank">doi.org/10.1016/j.amj.2024.09.001 ↗</a>
-    </div>
-    <div class="pub-item">
-      Timalsina, N., <strong>Joshi B.</strong>, et al. (2023). A cross-sectional study: Patient satisfaction towards services received in various outpatient departments at one of the tertiary care centers in Nepal. <em>Oklahoma State Medical Proceedings</em>, 7(3).
-      <br><a href="https://www.okstatemedicalproceedings.com/index.php/OSMP/article/view/205" target="_blank">okstatemedicalproceedings.com ↗</a>
-    </div>
-  </div>
-</section>
+Operations Manager — Outpatient & Operation Theatre
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="inner">
-    <p class="section-eyebrow">Contact</p>
-    <h2 class="section-title">Let's connect</h2>
-    <p style="color:#a8b0c4; font-size:0.95rem; max-width:520px;">
-      Seeking Clinical Data Analyst and Business Intelligence roles — open to all industries, 
-      with a preference for healthcare. Bringing SQL, Power BI, Python, and 10+ years of domain expertise 
-      to any team that runs on data.
-    </p>
-    <div class="contact-links">
-      <a class="contact-link" href="mailto:bimalajoshi026@gmail.com">
-        ✉ bimalajoshi026@gmail.com
-      </a>
-      <a class="contact-link" href="https://www.linkedin.com/in/bimala-joshi-598868130/" target="_blank">
-        in LinkedIn
-      </a>
-      <a class="contact-link" href="https://github.com/bimalajoshi026" target="_blank">
-        ⌥ GitHub
-      </a>
-      <a class="contact-link" href="tel:9405976449">
-        📞 940-597-6449
-      </a>
-    </div>
-  </div>
-</section>
+Remodeled OPD patient flow to improve coordination and reduce bottlenecks
+Emphasized morning OT usage to decrease daytime patient wait times
+Collected and managed hospital inventory; designed hospital-wide signage system
+Feb 2016
+— Sep 2017
+EyeQ India · India
 
-<footer>
-  © 2026 Bimala Joshi · Built for GitHub Pages
-</footer>
+Assistant Manager — HR
 
-</body>
-</html>
+Created and maintained HR reports and dashboards monthly for ~350 employees
+Recruited new employees and structured compensation aligned with industry standards
+Education
+
+Academic background
+MS Health Data Analytics
+
+University of North Texas · Denton, TX
+
+GPA 4.0 · May 2026
+
+MBA · Healthcare Management
+
+Chitkara University · Punjab, India
+
+GPA 3.8 · Jul 2015
+
+BS Microbiology
+
+Tribhuvan University · Kathmandu, Nepal
+
+GPA 3.7 · Jul 2013
+
+Certifications & Awards
+
+Credentials
+HIPAA Certification
+
+U.S. Dept. of Health & Human Services · Jun 2025
+
+Ethics in Health Research
+
+2024
+
+Data Literacy: Exploring Data in an AI World
+
+LinkedIn Learning · Jun 2026
+
+Learning Excel: Data Analysis
+
+LinkedIn Learning · May 2026
+
+Getting Started with Power BI
+
+LinkedIn Learning · Mar 2026
+
+SAP ERP Essential Training
+
+LinkedIn Learning · Mar 2026
+
+Non-Technical Skills of Data Scientists
+
+LinkedIn Learning · May 2026
+
+LCS 1a — Green Belt Certification
+
+Simpler · Jun 2014
+
+Basic Life Support (BLS)
+
+Nepal Mediciti Hospital · Sep 2022
+
+Infection Prevention & Control Workshop
+
+NCCDF & Nepal Mediciti · Aug 2018
+
+Publications
+
+Peer-reviewed research
+Singh, S., Joshi, B., et al. (2025). Evolution of helicopter services and their development from a medical standpoint: Nepal. Air Medical Journal, 44(1), 30–33.
+doi.org/10.1016/j.amj.2024.09.001 ↗
+Timalsina, N., Joshi B., et al. (2023). A cross-sectional study: Patient satisfaction towards services received in various outpatient departments at one of the tertiary care centers in Nepal. Oklahoma State Medical Proceedings, 7(3).
+okstatemedicalproceedings.com ↗
+Contact
+
+Let's connect
+Seeking Clinical Data Analyst and Business Intelligence roles — open to all industries, with a preference for healthcare. Bringing SQL, Power BI, Python, and 10+ years of domain expertise to any team that runs on data.
+
+✉ bimalajoshi026@gmail.com
+in LinkedIn
+⌥ GitHub
+📞 940-597-6449
+© 2026 Bimala Joshi · Built for GitHub Pages
